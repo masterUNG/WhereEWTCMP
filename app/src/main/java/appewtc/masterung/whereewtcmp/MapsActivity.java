@@ -154,9 +154,9 @@ public class MapsActivity extends FragmentActivity {
             @Override
             public void onMapClick(LatLng latLng) {
 
-                // mMap.addMarker(new MarkerOptions().position(latLng));
+                 mMap.addMarker(new MarkerOptions().position(latLng));
 
-                onOffPolygon(latLng.latitude, latLng.longitude);
+               // onOffPolygon(latLng.latitude, latLng.longitude);
 
 
             }   // event
@@ -185,7 +185,7 @@ public class MapsActivity extends FragmentActivity {
                 .strokeWidth(5)
                 .strokeColor(Color.MAGENTA)
                 .fillColor(Color.argb(50, 167, 236, 64));
-       // mMap.addPolygon(myPolygonOptions);
+        mMap.addPolygon(myPolygonOptions);
 
     }
 
